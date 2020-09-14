@@ -1,0 +1,460 @@
+.container
+    position: relative
+
+.btn
+    width: 139px
+    height: 39px
+    font-weight: bold
+    font-size: 14px
+    text-transform: uppercase
+    color: $mainColor
+    border: 2px solid $mainColor
+    border-radius: 8px
+    background-color: inherit
+
+    &:hover
+        color: $secondTextColor
+        background-color: $mainColor
+
+.label
+    position: relative
+    font-weight: bold
+    font-size: 48px
+    text-align: center
+    color: $mainColor
+    text-align: center
+    z-index: 3
+
+.circle
+    position: absolute
+    width: 86.4px
+    height: 86.4px
+    border-radius: 100%
+    z-index: 2
+
+.element
+    position: absolute
+    z-index: 1
+
+.column
+    position: absolute
+    min-height: 1000px
+    background-color: $columnColor
+    z-index: -1
+
+/*Header
+
+header
+    position: relative
+    height: 80px
+    background-color: $headerColor
+
+    .header_logo
+        display: block
+        max-width: 100%
+        margin-top: 14px
+
+    .menu
+        display: flex
+        justify-content: space-between
+
+        &_contact
+            display: block
+            margin-top: 34px
+            font-weight: bold
+            font-size: 14px
+            line-height: 13px
+            text-decoration: none
+            text-transform: uppercase
+            color: $mainColor
+
+            &:hover
+                text-decoration: underline
+
+        &_btn
+            width: 108px
+            height: 39px
+            margin-top: 21px
+            background-color: $mainColor
+            border: 2px solid $mainColor
+            border-radius: 8px
+            font-family: Nunito Sans
+            font-style: normal
+            font-weight: bold
+            font-size: 14px
+            line-height: 13px
+            text-transform: uppercase
+            color: $secondTextColor
+
+            &:hover
+                background-color: $secondTextColor
+                color: $mainColor
+
+    .hamburger
+        display: none
+
+/*Promo block
+    
+.promo
+    position: relative
+    min-height: 630px
+    /*background: url('../img/main.png') 92.2% 47.5% no-repeat
+    overflow: hidden
+
+    .column1
+        min-width: 596.31px
+        top: 0px
+        left: -466px
+    .column2
+        width: 77.5px
+        top: 0px
+        left: 181.12px
+    .column3
+        width: 48.1px
+        top: 0px
+        left: 306.8px
+    .column4
+        width: 29.4px
+        top: 0px
+        left: 405.73px
+    .column5
+        width: 18.7px
+        top: 0px
+        left: 483.28px
+
+    .element1
+        left: -58px
+        bottom: -141px
+        opacity: 0.3
+    .element_half
+        width: 409px
+        height: 409px
+        right: -204px
+        bottom: -340px
+        opacity: 0.3
+
+    &_header
+        margin: 0
+        margin-top: 150px
+        font-weight: bold
+        font-size: 48px
+        line-height: 65px
+        color: $mainColor
+
+    &_subheader
+        margin: 0
+        margin-top: 19px
+        font-weight: normal
+        font-size: 26px
+        color: $textColor
+    .btn
+        margin-top: 39px
+    &_img
+        position: absolute
+        top: 53px;
+        right: -55px;
+
+/*Advantage block
+
+.advantage
+    position: relative
+    min-height: 638px
+    padding: 73px 0px 74px 0px
+    background-color: $blockColor
+    overflow: hidden
+
+    .circle
+
+        &1
+            top: 36px
+            left: 465px
+            background-color: rgba(87, 147, 207, 0.1)
+        &2
+            bottom: 135px
+            right: -15px
+            opacity: 0.3
+            background-color: #5793CF
+
+    .element
+        position: absolute
+
+        &1
+            top: -79px
+            left: 0px
+            opacity: 0.3
+        &2
+            bottom: -102px
+            left: 141px
+            opacity: 0.3
+        &3
+            width: 409px
+            height: 409px
+            opacity: 0.3
+            right: -204px
+            top: -69px
+            
+    &_item
+        margin-top: 63px
+
+        img
+            width: 100%
+        &_title
+            margin-top: 24px
+            font-size: 28px
+            font-weight: bold
+            text-align: center
+            color: $mainColor
+        &_subtitle
+            margin: 0 auto
+            margin-top: 13px
+            font-size: 22px
+            font-weight: normal
+            text-align: center
+            color: $mainColor
+
+/*Answer block
+
+.answer
+    position: relative
+    min-height: 845px
+    background: url('../img/second_screen.png') 7.1% 63.8% no-repeat
+    overflow: hidden
+
+    .element1
+        position: absolute
+        left: 141px
+        top: -118px
+        opacity: 0.3
+
+    .half_circle
+        width: 165px
+        height: 165px
+        opacity: 0.1
+        bottom: -120px
+        right: -26px
+    
+    .circle1
+        top: 43px
+        right: 132px
+        background-color: rgba(87, 147, 207, 0.1)
+
+    .half
+        background-color: rgba(87, 147, 207, 0.3)
+        bottom: -62px
+        left: 255px
+
+    .label
+        margin-top: 74px
+    &_list ul
+        margin-top: 23px
+        list-style: none
+
+        li
+            margin-top: 33px
+            font-size: 22px
+            font-weight: normal
+            color: $textColor
+        li:before
+                content: "\2022"
+                color: $mainColor
+                font-size: 1.5em
+                display: inline-block
+                width: 1em
+
+/*Promotion block
+
+.promotion
+    position: relative
+    padding: 52px 0 37px 0
+    min-height: 254px
+    background-color: $blockColor
+    overflow: hidden
+
+    .element1
+        bottom: -37px
+        left: 33px
+        opacity: 0.3
+    
+    .element2
+        width: 165px
+        height: 165px
+        top: -45px
+        right: -26px
+        opacity: 0.3
+    .element3
+        width: 108px
+        height: 108px
+        bottom: -29px
+        right: 72px
+        opacity: 0.3
+
+    .circle1
+        left: 255px
+        top: -24px
+        background-color: rgba(87, 147, 207, 0.3)
+    .circle2
+        right: 241px
+        top: 12px
+        background-color: rgba(87, 147, 207, 0.5)
+    .circle3
+        right: 273px
+        bottom: 16px
+        background-color: rgba(87, 147, 207, 0.3)
+
+    .sublabel
+        font-size: 26px
+        font-weight: normal
+        text-align: center
+        color: $textColor
+
+/*Get Started block
+
+.get_started
+    position: relative
+    min-height: 500px
+    /*background: url('../img/third_screen.png') 81.5% 48.8% no-repeat
+    overflow: hidden
+
+    .column1
+        width: 596.31px
+        top: 0px
+        left: -133px
+    .column2
+        width: 77.5px
+        top: 0px
+        left: 514.12px
+    .column3
+        width: 48.1px
+        top: 0px
+        left: 639.8px
+    .column4
+        width: 29.4px
+        top: 0px
+        left: 738.73px
+    .column5
+        width: 18.7px
+        top: 0px
+        left: 816.28px
+
+    .element1
+        top: -183px;
+        left: 33px;
+        opacity: 0.3
+    .element2
+        width: 108px
+        height: 108px
+        top: -79px;
+        right: 72px;
+        opacity: 0.3
+
+    .label
+        margin-top: 135px
+        text-align: left
+    &_text
+        margin-top: 19px
+        font-size: 26px
+        color: $textColor
+    .btn
+        margin-top: 37px
+    &_img
+        position: absolute
+        top: 37px;
+        right: 54px
+
+/*Footer block
+
+footer
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 62px
+    background-color: $mainColor
+
+    .footer_text
+        opacity: 0.6
+        font-size: 14px
+        font-weight: bold
+        text-transform: uppercase
+        color: #ffffff
+
+
+/*Modal window*/
+
+.overlay
+    display: none
+    position: fixed
+    width: 100%
+    height: 100%
+    top: 0
+    background-color: rgba(23, 61, 123, 0.8)
+    z-index: 1500
+
+    .modal
+        box-sizing: border-box
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 736px;
+        min-height: 713px
+        padding: 47px 23px 46px 24px
+        background: #FFFFFF
+        border: 12px solid $mainColor
+        &__close
+            position: absolute
+            top: -80px
+            right: -72px
+            font-weight: 900
+            font-size: 104px
+            line-height: 70px
+            color: rgba(255, 255, 255, 0.5)
+            cursor: pointer
+        &__subtitle
+            font-weight: bold
+            font-size: 42px
+            line-height: 57px
+            text-align: center
+            color: $mainColor
+        &__descr
+            font-weight: normal
+            font-size: 26px
+            line-height: 35px
+            text-align: center
+            color: $textColor
+        .feed-form
+            display: flex
+            flex-direction: column
+            margin: 38px 126px 0px 126px
+            input
+                margin-top: 22px
+                padding: 9px 17px
+                font-weight: normal
+                font-size: 28px
+                line-height: 38px
+                color: $mainColor
+                background: rgba(201, 229, 255, 0.2)
+                border: 1px solid #C9E5FF
+                border-radius: 6px
+                &:nth-child(1)
+                    margin-top: 0
+                    padding: 9px 14px
+                &:last-child
+                    font-weight: bold
+                    font-size: 28px
+                    line-height: 38px
+                    color: #FFFFFF
+                    text-transform: uppercase
+                    background: $mainColor
+                    
+                &::placeholder
+                    font-weight: normal
+                    font-size: 28px
+                    line-height: 38px
+                    color: $mainColor
+                &::selection
+                border: 1px solid #C9E5FF
+                border-radius: 6px
+                    
+
+    #subscribe
+        display: none

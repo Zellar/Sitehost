@@ -1,0 +1,113 @@
+@media (max-width: 1200px)
+    .promo
+        &_header
+            font-size: 38px
+    
+@media (max-width: 991px)
+    .promo
+        &_header
+            line-height: 42px
+            text-align: center
+        &_subheader
+            text-align: center
+        .btn
+            position: relative
+            left: 50%
+            transform: translate(-50%, 0)
+        &_img
+            position: static
+            height: auto
+            width: 100%
+
+    .answer
+        background: none
+    .get_started
+        .label
+            text-align: center
+        &_text
+            text-align: center
+        .btn
+            position: relative
+            left: 50%
+            transform: translate(-50%, 0)
+        &_img
+            position: static
+            height: auto;
+            width: 100%;
+
+@media (max-width: 767px)
+    header
+        .menu
+            position: fixed
+            flex-direction: column
+            align-items: center
+            justify-content: space-around
+            top: 0
+            right: -100%
+            width: 50%
+            height: 30vh
+            background-color: #fff
+            z-index: 100
+            transition: 0.6 all
+            &_active
+                left: 0
+            &_contact
+                font-size: 25px
+            &_btn
+                width: 160px
+                height: 45px
+                font-size: 25px
+        
+        .hamburger
+            display: block
+            position: absolute
+            right: 10px
+            top: 50%
+            transform: translateY(-50%)
+            width: 30px
+            height: 21px
+            span
+                display: block
+                height: 3px
+                width: 100%
+                background-color: $mainColor
+                margin-bottom: 4px
+                transition: 0.5s all
+            &_active
+                span
+                    margin: -3px
+                    &:nth-child(1)
+                        transform: translateY(3px) rotate(-45deg)
+                    &:nth-child(2)
+                        display: none
+                    &:nth-child(3)
+                        transform: translateY(3px) rotate(45deg)
+    .advantage
+        .circle2
+            display: none
+    
+    .answer
+        .half
+            display: none
+    .promotion
+        .circle1
+            display: none
+        .circle3
+            display: none
+
+@media (max-width: 320px)
+    .promo
+        .element_half
+            display: none
+    .advantage
+        .element3
+            display: none
+    .answer
+        .circle1
+            display: none
+    .promotion
+        .element3
+            display: none
+    .get_started
+        .element2
+            display: none
